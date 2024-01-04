@@ -5,7 +5,7 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@0.*/da
     API.addSettings('skip',true);
 
 	//Replace the 2nd argument with your DataPipe Experiment ID
-	init_data_pipe(API, 'DATAPIPEEXPERIMENTID', 'csv'); 
+	init_data_pipe(API, 'aCBUJfnXYMgw', 'csv'); 
 
     //Randomly select which of two sets of category labels to use.
     let raceSet = API.shuffle(['a','b'])[0];
