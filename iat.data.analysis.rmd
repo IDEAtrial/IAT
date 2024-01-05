@@ -1,6 +1,6 @@
 
 ```{r}
-zip.directory <- 'C:\\Users\\Yoav\\OneDrive - Tel-Aviv University\\Documents\\bigfiles\\datapipe\\raceiat1'
+zip.directory <- 'C:\Users\eport\OneDrive\Attending\Research\PCORI FAAN-C IDEA trial\IAT Data'
 raw.directory <- paste0(zip.directory,'\\raw.files')
 proc.directory <- paste0(zip.directory,'\\processed')
 ```
