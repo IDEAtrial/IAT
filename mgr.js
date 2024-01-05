@@ -88,7 +88,7 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@0.*/da
         lastpage: [{
             type: 'message',
             name: 'lastpage',
-            templateUrl: 'lastpage.jst',
+            templateUrl: 'lastpage.showresults.jst',
             title: 'End',
             //Uncomment the following if you want to end the study here.
             //last:true, 
