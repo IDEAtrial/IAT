@@ -7,19 +7,6 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@0.*/da
 	//Replace the 2nd argument with your DataPipe Experiment ID
 	init_data_pipe(API, 'aCBUJfnXYMgw', 'csv'); 
 
-	
-            fetch("https://pipe.jspsych.org/api/data/", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-                Accept: "*/*",
-              },
-              body: JSON.stringify({
-                experimentID: "aCBUJfnXYMgw",
-                filename: "UNIQUE_FILENAME.csv",
-                data: dataAsString,
-              }),
-            });
 
     //Randomly select which of two sets of category labels to use.
     let raceSet = API.shuffle(['a','b'])[0];
@@ -108,6 +95,20 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@0.*/da
             //last:true, 
             header: 'You have completed the study'
         }], 
+
+	    
+            fetch("https://pipe.jspsych.org/api/data/", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                Accept: "*/*",
+              },
+              body: JSON.stringify({
+                experimentID: "aCBUJfnXYMgw",
+                filename: "UNIQUE_FILENAME.csv",
+                data: dataAsString,
+              }),
+            });
         
         //Use if you want to redirect the participants elsewhere at the end of the study
         redirect:
