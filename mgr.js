@@ -154,16 +154,6 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@0.*/da
         
         
         {inherit: 'intro'},
-	    
-// Include the new session ID task in the sequence    
-    {
-        mixer: 'wrapper',
-        data: [
-            {inherit: 'sessionIDTask'},
-         
-        ]
-    },
-	    
         {
             mixer:'random',
             data:[
