@@ -57,7 +57,7 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@0.*/da
             buttonText: 'Continue'
         }],
 	
-	sessionIDTask: [{
+	sessionIdTask: [{
 	type: 'quest',
 	name: 'sessionIDTask',
 	scriptUrl: 'sessionIDTask.js'
