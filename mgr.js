@@ -151,7 +151,14 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@0.*/da
                 }
             ]
         },
-        
+
+	{
+        mixer: 'wrapper',
+        data: [
+            {inherit: 'sessionIdTask'},
+            // ... (existing tasks)
+        ]
+    },    
         
         {inherit: 'intro'},
         {
