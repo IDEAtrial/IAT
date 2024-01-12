@@ -7,6 +7,21 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@0.*/da
 	//Replace the 2nd argument with your DataPipe Experiment ID
 	init_data_pipe(API, 'aCBUJfnXYMgw', 'csv'); 
 
+	API.addSequence([
+        {
+            questions:[
+                {
+                    type: 'text',
+                    stem: 'What is your session ID? (You can find this in the email you received).'
+                },
+
+            ]
+        }
+    ]);
+
+    return API.script;
+});
+
     //Randomly select which of two sets of category labels to use.
     let raceSet = API.shuffle(['a','b'])[0];
     let blackLabels = [];
