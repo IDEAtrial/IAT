@@ -33,8 +33,6 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@0.*/da
             ]
         } // page ends
     ]); 
-	return API.script;
-});
 
     API.addGlobal({
         raceiat:{},
