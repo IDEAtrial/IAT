@@ -2,15 +2,15 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat10.
     let API = new APIConstructor();
     let global = API.getGlobal();
 
-    API.addQuestionsSet('SessionID',{
-	   inherit: 'text',
-	   name: 'SessionID',
-	   stem: "What is your Session ID? (You can find this in the email you were sent)."
-	});
-    
     return iatExtension({
         
-        category1 : {
+        question: {
+		type: 'text',
+		stem: 'What is your Session ID?',
+	    	help: 'Your Session ID can be found in the email you were sent.'
+	},
+	    
+	category1 : {
             name : global.blackLabels, //Will appear in the data.
             title : {
                 media : {word : global.blackLabels}, //Name of the category presented in the task.
