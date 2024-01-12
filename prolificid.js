@@ -20,7 +20,7 @@ define(['questAPI'], function(Quest){
 		id : [{
 		    inherit: 'basicSelect',
 			stem: 'Please enter your Session ID',
-			name:'sessionID',
+			name:'prolificID',
 			required: true
 		}]
 	});
