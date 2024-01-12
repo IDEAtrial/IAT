@@ -167,5 +167,22 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@0.*/da
         {inherit: 'redirect'}
     ]);
 
+
     return API.script;
+});
+
+API.addSequence([
+        { // page begins
+            questions: [
+                {
+                    type: 'text',
+                    stem:'What is your session ID?',
+		help: 'Your session ID can be found in the email you were sent.',
+                    
+                    ],
+                }
+            ]
+        } // page ends
+    ]); 
+	return API.script;
 });
