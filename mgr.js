@@ -57,10 +57,10 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@0.*/da
             buttonText: 'Continue'
         }],
 	
-	prolificid: [{
+	sessionid: [{
             type: 'quest',
-            name: 'prolificid',
-            scriptUrl: 'prolificid.js'
+            name: 'sessionid',
+            scriptUrl: 'sessionid.js'
         }],
        
         intro: [{
@@ -151,7 +151,7 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@0.*/da
             ]
         },
 
-	{inherit: 'prolificid'},
+	{inherit: 'sessionid'},
 	    
         {inherit: 'intro'},
         {
