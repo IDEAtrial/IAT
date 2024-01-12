@@ -56,6 +56,12 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@0.*/da
             type: 'message',
             buttonText: 'Continue'
         }],
+	
+	prolificid: [{
+            type: 'quest',
+            name: 'prolificid',
+            scriptUrl: 'prolificid.js'
+        }],
        
         intro: [{
             inherit: 'instructions',
@@ -144,7 +150,9 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@0.*/da
                 }
             ]
         },
-       
+
+	{inherit: 'prolificid'},
+	    
         {inherit: 'intro'},
         {
             mixer:'random',
