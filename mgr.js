@@ -20,20 +20,6 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@0.*/da
         whiteLabels.push('White people');
     }
 
-	API.addSequence([
-        { // page begins
-            questions: [
-                {
-                    type: 'text',
-                    stem:'What is your session ID?',
-		help: 'Your session ID can be found in the email you were sent.',
-                    
-                    ],
-                }
-            ]
-        } // page ends
-    ]); 
-
     API.addGlobal({
         raceiat:{},
         //YBYB: change when copying back to the correct folder
