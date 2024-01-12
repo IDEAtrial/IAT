@@ -52,16 +52,17 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@0.*/da
     });
 
     API.addTasksSet({
-        instructions: [{
+        sessionIDTask: [{
+		type: 'quest',
+		name: 'sessionIDTask',
+		scriptUrl: 'sessionIDTask.js'
+	}],
+	    
+	instructions: [{
             type: 'message',
             buttonText: 'Continue'
         }],
 	
-	sessionIDTask: [{
-	type: 'quest',
-	name: 'sessionIDTask',
-	scriptUrl: 'sessionIDTask.js'
-	}],
        
         intro: [{
             inherit: 'instructions',
