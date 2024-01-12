@@ -4,14 +4,6 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat10.
 
     return iatExtension({
         
-
-        questions:[
-                {
-                    type: 'text',
-                    stem: 'What is your session ID? (You can find this in the email you received).'
-                },
-
-
         category1 : {
             name : global.blackLabels, //Will appear in the data.
             title : {
