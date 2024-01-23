@@ -19,8 +19,16 @@ define(['questAPI'], function(Quest){
 	API.addQuestionsSet({
 		id : [{
 		    inherit: 'basicSelect',
-			stem: 'Please enter your Session ID',
+			stem: 'Please enter your unique participant ID (Reminder: your unique participant ID was emailed to you when you completed your consent.)',
 			name:'sessionID',
+			required: true
+		}]
+
+		API.addQuestionsSet({
+		id : [{
+		    inherit: 'basicSelect',
+			stem: 'Please enter the last 4 digits of your cell phone number.',
+			name:'phonenumber',
 			required: true
 		}]
 	});
