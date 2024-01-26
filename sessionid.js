@@ -51,7 +51,7 @@ define(['questAPI'], function(Quest){
             inherit:'basicPage', 
             questions: [
                 {inherit:'id'}
-                       
+                { inherit: 'phoneNumber' }                       
 	    ]
          }
     ]);
