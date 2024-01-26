@@ -28,10 +28,10 @@ define(['questAPI'], function(Quest){
             inherit: 'basicSelect',
             stem: 'Please enter the last 4 digits of your cell phone number.',
             name: 'phoneNumber',
-            required: true,
+            required: true
 	      }]
 
-	}];
+	});
 
     /**
 	    Pages
