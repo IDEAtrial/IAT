@@ -19,7 +19,7 @@ define(['questAPI'], function(Quest){
 	API.addQuestionsSet({
 		id : [{
 		    inherit: 'basicSelect',
-			stem: 'Please enter your unique participant ID (Reminder: your unique participant ID was emailed to you when you completed your consent.)',
+			stem: 'Please enter your unique participant ID followed by the last 4 digits of your cell phone number. Your unique participant ID was emailed to you when you completed your consent. Example: If your unique participant ID is 1, with cell phone number (999) 867-5309, you would enter 15309.',
 			name:'sessionID',
 			required: true
 
