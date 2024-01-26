@@ -24,11 +24,11 @@ define(['questAPI'], function(Quest){
 			required: true
 
 		}],
-		phoneNumber: [{
-            inherit: 'basicSelect',
-            stem: 'Please enter the last 4 digits of your cell phone number.',
-            name: 'phoneNumber',
-            required: true
+	        phoneNumber: [{
+           	    inherit: 'basicSelect',
+            		stem: 'Please enter the last 4 digits of your cell phone number.',
+            		name: 'phoneNumber',
+            		required: true
 	      }]
 
 	});
@@ -50,7 +50,7 @@ define(['questAPI'], function(Quest){
         {
             inherit:'basicPage', 
             questions: [
-                {inherit:'id'}
+                {inherit:'id'},
                 { inherit: 'phoneNumber' }                       
 	    ]
          }
